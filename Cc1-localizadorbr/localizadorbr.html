@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>LocalizadorBR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/localizadorbr.js"></script>
+</head>
+<body class="bg-dark"><!--INICIO BODY-->
+    <div class="container-sm bg-danger text-white p-2 text-center rounded"><!--INICIO TITULO-->
+        <h1 class="display-3">LocalizadorBR</h1>
+        <h5>Serviço gratuito de localização dos dados das regiões do Brasil, utilizando dados do IBGE atualizados</h5>
+    </div><!--FIM TITULO-->
+    
+    <div class="container bg-light p-4 text-center"><!--INICIO BLOCO ESTADOS-->
+        <label style="font-size:1.5em" class="font-weight-bold text-danger">Estados:</label>
+        <select id="estados" onchange="Cidades()"></select>
+    </div><!--FIM BLOCO ESTADOS-->
+
+    <div class="container bg-light p-4 text-center"><!--INICIO BLOCO CIDADES-->
+        <label style="font-size:1.5em" class="font-weight-bold text-danger">Cidades:</label>
+        <select id="cidades" onchange="Detalhes()"></select>
+    </div><!--FIM BLOCO CIDADES-->
+
+    <div id="detalhes" class="container bg-light p-4 text-center"><!--INICIO BLOCO DETALHES-->
+        <div><img style="width:100%" src="img/001.jpg" class="rounded mb-4"/></div>
+        <h4 class="bg-danger text-white p-2 font-weight-light mb-3">DETALHES DA CIDADE</h4>
+        <div class="m-2 text-danger d-flex justify-content-center font-weight-bold">
+            <label class="mx-2">ID:</label><input class="col-sm" type="text" id="txtIdCidade" readonly />
+            <label class="mx-2">NOME:</label><input class="col-sm" type="text" id="txtNomeCidade" readonly />
+        </div>
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">Microrregião</h4>
+            <div class="m-2 text-danger d-flex justify-content-center font-weight-bold">
+                <label class="mx-2">ID:</label><input class="col-sm" type="text" id="txtIdMicro" readonly />
+                <label class="mx-2">NOME:</label><input class="col-sm" type="text" id="txtNomeMicro" readonly />
+            </div>
+        </div>
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">Mesorregião</h4>
+            <div class="m-2 text-danger d-flex justify-content-center font-weight-bold">
+                <label class="mx-2">ID:</label><input class="col-sm" type="text" id="txtIdMeso" readonly />
+                <label class="mx-2">NOME:</label><input class="col-sm"  type="text" id="txtNomeMeso" readonly />
+            </div>
+
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">Estado</h4>
+            <div class="m-2 text-danger d-flex justify-content-center font-weight-bold">
+                <label class="mx-2">ID:</label><input class="col-sm" type="text" id="txtIdEstado" readonly /><br />
+                <label class="mx-2">SIGLA:</label><input class="col-sm" type="text" id="txtSiglaEstado" readonly />
+                <label class="mx-2">NOME:</label><input class="col-sm" type="text" id="txtNomeEstado" readonly />
+            </div>
+
+            <div>
+                <h4 class="bg-danger text-white p-2 font-weight-light mb-3">Região</h4>
+                <div class="m-2 text-danger d-flex justify-content-center font-weight-bold">
+                    <label class="mx-2">ID:</label><input class="col-sm" type="text" id="txtIdRegiao" readonly />
+                    <label class="mx-2">SIGLA:</label><input class="col-sm" type="text" id="txtSiglaRegiao" readonly />
+                    <label class="mx-2">NOME:</label><input class="col-sm" type="text" id="txtNomeRegiao" readonly />
+                </div>
+            </div>
+        </div>
+    </div><!--FIM BLOCO DETALHES-->
+
+    <footer class="container bg-danger p-2"><!--INICIO RODAPÉ-->
+        <div class="container mx-auto row text-center">
+            <div class="col-sm-8">
+                <div class="text-left"><p><small class="text-white">
+                Projeto desenvolvido para avaliação de Ciência da Computação I<br />
+                Aluno: Marcus Vinicius Rolim de Oliveira<br />
+                Professor: Luiz Augusto  <br />                  
+                Ciência da Computação - UNIDERP<br />
+                Campo Grande - MS<br />
+                </small></p><br /></div>
+                <h4 class="text-white">Tutorial para desenvolvedor</h4>
+                <button type="button" class="btn btn-warning mb-4"><a href="tutorial.html">Acessar</a></button><br />                
+            </div>
+            <div class="bg-danger align-self-center p-2 col-sm-4">
+                <a href="https://www.ibge.gov.br/"><img style="width: 100%; background: white; padding: 5px" src="img/ibge-150x101.png" /></a>
+            </div>
+        </div>
+    </footer><!--FIM RODAPÉ-->
+</body><!--FIM BODY-->
+</html>

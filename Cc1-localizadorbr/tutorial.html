@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LocalizadorBR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/localizadorbr.js"></script>
+</head>
+<body class="bg-dark">
+    <div class="container-sm bg-danger text-white p-2 text-center rounded">
+        <!--INICIO TITULO-->
+        <h1 class="display-4">TUTORIAL DESENVOLVEDOR</h1>
+        <h5>Para iniciantes no mundo da programação ou calouros de ciência da computação</h5>
+    </div><!--FIM TITULO-->
+
+    <div class="container-sm mt-2 p-0">
+        <h4 class="bg-danger text-white p-2 font-weight-light mb-3">INTRODUÇÃO</h4>
+        <div class="bg-light text-justify">
+            <p class="p-4">
+                <span class="h4 pl-5 font-weight-normal">Este</span> tutorial tem o intuito de instruir todo desenvolvedor iniciante criar esse site de serviço, utilizando uma API externa, trabalhando com as ferramentas de front-end.<br /><br />
+                Iniciaremos com a utilização do HTML, para estruturar o site, assim utilizaremos o JavaScript para manipularmos dados e por fim vamos estilizar o site utilizando apenas o BootStrap 4.<br /><br />
+                É recomendado que tenha conhecimento básico de computação para concluir o desenvolvimento, porém será disponibilizado links de material de apoio para estudar e adquirir o conhecimento necessário para a conclusão do projeto.<br /><br />
+            </p>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">DESENVOLVIMENTO LOCALIZADORBR</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4">
+                    <span class="h4 pl-5 font-weight-normal">O</span> site de serviço tem como objetivo utilizar uma <a href="https://canaltech.com.br/software/o-que-e-api/#:~:text=API%20%C3%A9%20um%20conjunto%20de,Interface%20de%20Programa%C3%A7%C3%A3o%20de%20Aplicativos%22.">API</a>, disponibilizada pelo <a href="https://servicodados.ibge.gov.br/api/docs">IBGE</a>, onde pode se fazer uma busca das regiões do Brasil, estados, cidades além das regiões meso, micro, todos os dados automaticamente atualizados diretamente do site do órgão governamental.<br /><br />
+                    Iniciando o desenvolvimento, é necessário a utilização de uma IDE.<br /><br />
+                    A IDE utilizada para o desenvolvimento do projeto foi o <a href="https://visualstudio.microsoft.com/pt-br/thank-you-downloading-visual-studio/?sku=Community&rel=16">Visual Studio</a>, caso não tenha um hardware com bom desempenho pode se utilizar outras IDEs como <a href="https://www.sublimetext.com/3">Sublime Text</a> que também é uma IDE profissional, ou pode ser utilizada a universitária <a href="http://www.codeblocks.org/">Code Blocks</a>.<br /><br />
+                    Estando dentro da IDE escolhida, iniciamos os primeiros passos.<br /><br />
+                    <br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">1º PASSO - Construir a estrutura do cabeçalho head HTML:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Cria</span> um arquivo html para se tornar a main, ou a home de seu site.<br /><br />
+                    Na construção dependendo da IDE, pode vir construída partes da estrutura, a estrutura completa de um início deve ser:<br /><br />
+                </p>
+                <img style="width:100%" class="p-0" src="img/002.jpg" />
+                <p class="p-4">
+                    Caso queira entender um pouco sobre como deve ser feito uma construção básica em HTML, o site <a href="https://www.w3schools.com/html/default.asp">w3school</a> disponibiliza inúmeros tutoriais e informações necessárias para o desenvolvimento.<br /><br />
+                    Foi do site w3school que foram retirados todos os scripts utilizados no cabeçalho do projeto.<br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">2º PASSO - Iniciando o corpo body do site:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Utilizaremos</span> 5 blocos para o desenvolvimento do site.<br /><br />
+                </p>
+                <img style="width:100%" src="img/003.jpg" />
+                <p class="p-4">
+                    Logo linha primeira linha iniciamos o corpo do site, onde se adiciona uma classe bootstrap bg-dark ( background-dark ), criando um estilo de fundo escuro.<br /><br />
+                    Segunda linha abre o primeiro bloco div> que será utilizado como título do site, usando a classe bootstrap de container-sm, onde o bloco se torna responsivo para sm, small devices, no caso celulares, fazendo com que todos os elementos do bloco, quando forem acessados por celulares, serão mostrados de forma de pilha, um elemento em cima do outro, ou por conhecidos como forma de stacks.<br /><br />
+                    O restante do das classes são para estilos do texto, text-white, deixa os textos brancos, p-2, é o espaçamento do conteúdo referente ao bloco, conhecido como padding, de 2 unidades de medidas do bootstrap, text-center indica que os textos são centralizados no bloco e por fim o rounded, os cantos ficam arredondados.<br /><br />
+                    H1> é a tag de título do HTML, e utilizando classes do bootstrap como a display-3, transforma o design do título mais agradável, e utilizando o font-size-sm, transforma o tamanho do título responsivo pois mais uma vez em small devices, ou celulares ele ficará tamanho padrão, fazendo com que não quebre o bloco.<br /><br />
+                    H5> é uma tag para um subtítulo bem pequeno, tamanho de 20px para ser mais preciso.<br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">3º PASSO - Iniciando a manipulação de dados:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <img class="m-0 p-0" style="width:100%" src="img/004.jpg" />
+                    <span class="h4 pl-5 font-weight-normal">Entrando</span> no segundo bloco iniciaremos a manipulação dos dados, nesse bloco terá os comandos para exibir na tela as informações manipuladas de nossa API, no caso desse site, será o bloco que mostrará as opções de escolha dos estados que o usuário poderá acessar.<br /><br />
+                    As classes já discutidas acima passarei direto, focamos na parte de seleção, onde se tem a tag select>, que é a tag responsável por criar as opções para o usuário acessar, e essa seleção tem um código para ser acessada, que chamamos de “id”, no caso nosso id é “estados”.<br /><br />
+                    Onchange é um comando que executa alguma ação assim que selecionado alguma opção, no site será executada a função “Cidades()”.<br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">4º PASSO - Acessando os dados:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Para</span> acessarmos os dados, será necessário criar um arquivo JavaScript, que é a ferramenta de linguagem de programação do front-end.<br /><br />
+                    Logo iniciando o arquivo JavaScript, deve se executar funções, através de alguns comandos.<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/005.jpg" />
+                <p class="p-4">
+                    O $ é chamado de seletor, ele é a mão do JavaScript Jquery, assim inicia a função, assim logo que se abre o site é executado as funções iniciais.<br /><br />
+                    Estados();<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/006.jpg" />
+                <p class="p-4">
+                    O processo é simples, a função tem o objetivo de buscar os dados da API, no caso a função busca os dados em um link que o IBGE disponibiliza.<br /><br />
+                    Para isso, cria-se uma variável (var) que se atribui o endereço da API, em seguida, acessa o endereço e pega ($.get) a variável e executa outra função, de retorno e de status.<br /><br />
+                    O retorno basicamente é a resposta do que achou no endereço e o status é a mensagem que o servidor entrega, via HTTP/HTTPS.<br /><br />
+                </p>
+            </div>
+            <div>
+                <h4 class="bg-danger text-white p-2 font-weight-light mb-3">AÇÃO COMPLEMENTAR:</h4>
+                <div class="bg-light text-justify">
+                    <p class="p-4 text-justify">
+                        <span class="h4 pl-5 font-weight-normal">Para</span> conseguir acessar os dados da API, e entender como ela está estruturada, para poder saber como fazer a pesquisa por ela, utilizamos uma ferramenta chamada <a href="https://www.postman.com/">POSTMAN</a>.<br /><br />
+                        Onde se insere o endereço que quer acessar, e essa ferramenta mostra, como está estruturado.<br /><br />
+                    </p>
+                    <img class="m-0 p-0" style="width:100%" src="img/postman.png" /><br /><br />
+                    <img class="m-0 p-0" style="width:100%" src="img/007.jpg" />
+                    <p class="p-4">
+                        Assim visualizando a forma de estrutura, podemos verificar que se inicia com [, fazendo assim procurarmos um retorno de um array, que são matrizes que armazenam vários valores em uma única variável, assim, verificamos quais são os valores dentro do array e as nomes de suas classes.<br /><br />
+
+                        Entendido como acessamos os arquivos de dados da API. Vamos continuar com a resposta, o retorno do servidor.<br /><br />
+
+                        Com esse retorno temos duas opções, caso não encontre nada, ou caso encontremos algo.<br /><br />
+
+                        Assim executamos uma condicional, onde se a resposta do retorno for negativa, (if retorno.length == 0) , traduzindo o comando, .length mostra o número de caracteres, no caso strings tem, caso não tenha nenhuma string, a lógica é que não tenha encontrado nada, fazendo assim.<br /><br />
+
+                        Uma mensagem de erro para o usuário, através do comando alert, adicionando o status, para conseguir identificar qual foi o problema ocorrido, através do protocolo enviado pelo servidor.<br /><br />
+
+                        Caso encontre algum dado no endereço, temos a segunda opção, (else) onde iniciamos com a função show(false) que será desenvolvida no final da aplicação.<br /><br />
+
+                        E assim, ligamos o nosso primeiro bloco do HTML, que chamamos de “estados” com o comando (‘#estados’) onde o # é o indicador que está ligado à alguma coisa, fazendo assim a continuação do comando .append que atribui um valor booleano (falso, verdadeiro; 0 ou 1) para agir o próximo passo que é utilizar o banco de opções que o usuário poderá escolher, retirada do banco de dados do endereço pesquisado.<br /><br />
+
+                        Para iniciar atribuímos um valor (value) = 0, onde mostra o texto de “selecionar estado”.<br /><br />
+
+                        Assim, criamos uma lista encadeada simples, do zero ao fim, de todos os dados do endereço acessado, utilizando uma estrutura de repetição (for), onde criamos o método de de 0 ao fim.<br /><br />
+
+                        (var i = 0; i < retorno.length; i++)<br /><br />
+
+                        Cria uma variável i atribuindo o valor de 0, em seguida faz a condicional para se repetir, sendo que i deve ser sempre menor do que o retorno que se busca, no caso irá buscar todos os dados até não achar mais nada, e assim finalizar a repetição, a forma de caminhar na lista encadeada é toda vez que se acha algum retorno, se incrementa (i++) adicionando um valor de i, fazendo com que o i um momento seja maior que o retorno finalizando as repetições.<br /><br />
+
+                        Para cada repetição é criada uma variável, no local do valor de i.<br /><br />
+
+                        var = estado = retorno[i];<br /><br />
+
+                        Cada vez que essa variável recebe um novo valor de i, ele acessa o bloco HTML, chamado estados e se adiciona os valores do endereço.<br /><br />
+
+                        $('#estados').append($('option>', { value: estado.id, text: estado.nome }));<br /><br />
+
+                        <img class="m-0 p-0" style="width:100%" src="img/007.jpg" />
+                    </p>
+                    <p class="p-4">
+                        Sabendo dessa estrutura da API, então o valor que queremos mostrar nas opções é o id da informação, e se nome, fazendo o comando value: estado.id, isto é dentro de estado, acesse o id e mostre o nome que está cadastrado nesse id, com o text: estado.nome.<br /><br />
+
+                        Todos essas palavras estão como vemos na estrutura do código da API.<br /><br />
+
+                        Finalizando essa primeira função.<br /><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">5º PASSO - Construindo o terceiro bloco no HTML</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Com</span> a execução da função e mostrando as opções de estados no segundo bloco, agora construímos o bloco das cidades.<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/008.jpg" />
+                <p class="p-4">
+                    Esse bloco é o mesmo procedimento do bloco anterior, apenas mudando o seu nome, e ativando outra função, no caso assim que a opção for escolhida ela executará a função “Detalhes()”.<br /><br />
+
+                    A finalidade desse bloco é disponibilizar as opções de cidades, para aquele estado escolhido no bloco anterior.<br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">6º PASSO - Acessando as informações internas da API:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Voltando</span> para o arquivo js, JavaScript, vamos desenvolver a função que detectará todas as cidades que estão dentro de cada estado.<br /><br />
+
+                    O processo é parecido com a função de estados, com alguns procedimentos a mais.<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/009.jpg" />
+                <p class="p-4">
+                    Como é uma continuação da função estados, iniciamos com a criação de uma variável com o valor atribuído da função anterior.<br /><br />
+
+                    var estadoID = $(‘#estados’).val();<br /><br />
+
+                    Vamos utilizar o seletor, acessando o bloco do HTML estados, com seu valor.<br /><br />
+
+                    Agora devemos acessar o endereço avançando pastas do endereço.<br /><br />
+
+                    var urlCidades = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/' + estadoID + '/municipios';<br /><br />
+
+                    Utilizando o endereço dos estados + a pasta do valor do estado escolhido + a pasta de das cidades, encontraremos outra estrutura de dados:<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/010.jpg" />
+                <p class="p-4">
+                    Assim podemos analisar e acessar de forma correta os dados.<br /><br />
+
+                    Seguindo o acesso dos dados, voltamos a questão como na função passada de verificar se encontrou algo, e usar a condicional, a mudança agora, é que ao invés de buscar um retorno, buscaremos valores dos dados. Com a função “data”, como podemos ver no código.<br /><br />
+
+                    $.get(urlCidades, function (data, status) {<br /><br />
+
+                    Outro comando adicional que se adiciona na função comparada com a função passada é o adicional do $('#cidades').empty(); que é o comando para zerar qualquer tipo de informação que esteja no bloco, para não ocorrer colisão de dados, ou troca de dados ou extravio de dados gerando gasto de memória em vão.<br /><br />
+
+                    Seguindo a função como a função anterior, onde trará agora ao invés de estados, buscamos as cidades.<br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">7º PASSO - Desenvolvendo o bloco de detalhes finais da API:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Nesse</span> passo mostraremos todos os dados que se encontra em cada cidade.<br /><br />
+
+                    Com base nos dados de uma cidade, extraídos pelo postman:<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/010.jpg" />
+                <p class="p-4">
+                    Construímos o bloco:<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/011.jpg" />
+                <p class="p-4">
+                    Criando o bloco, iniciamos com o nome id=”detalhes” logo no div> inicial.<br /><br />
+
+                    Em seguida adicionamos uma imagem, com tamanho ajustado a 100% do container, com o comando de estilo style=”width:100%”.<br /><br />
+
+                    Para os títulos dessas várias informações, utilizamos uma classe font-weight-light, do bootstrap, onde deixa a letra mais fina e bonita para se ver, e com o mb-3, é margin bottom, margem inferior de 3 unidades de medidas do bootstrap.<br /><br />
+
+                    Adicionando as duas informações que se tem das cidades, no caso o id e o nome, agrupamos em um minibloco, onde com a classe justify-content-center, todas as informações ficam centralizadas no bloco.<br /><br />
+
+                    label class="mx-2">ID:label><nput class="col-sm" type="text" id="txtIdCidade" readonly /><br /><br />
+
+                    No comando criamos um rótulo/nome da opção que será mostrada, em seguida adicionamos o input> uma entrada de informação, que será encontrada pelo nome txtIdCidade, e por fim o readonly, que assim que a informação seja acessada ela já seja mostrada em tela.<br /><br />
+
+                    E esse processo é feito repetidamente para todas as informações acessadas.<br /><br />
+                </p>
+            </div>
+        </div>
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">8º PASSO - Executando a função de detalhes:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Acessando</span> o arquivo JavaScript podemos verificar a função Detalhes(), que é executada logo que se escolhe uma opção de cidade, da função anterior.<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/012.jpg" />
+                <p class="p-4">
+                    Fazendo o mesmo procedimento da função anterior, criamos uma variável com o valor final da função anterior, no caso criamos cidadeID.<br /><br />
+
+                    Criamos uma variável com o novo endereço das informações para acessar, adicionando no final o valor de cidadeID, que será o nome da pasta do endereço.<br /><br />
+
+                    Criamos a variável linha, para atribuir o dado a ser lido.<br /><br />
+
+                    E para se mostrar utilizamos o acesso do dado, para sabermos o caminho até o fim, como cada dado está dentro de outro, podemos utilizar o último exemplo, que é o caminho mais longo.<br /><br />
+
+                    $('#txtNomeRegiao').val(linha.microrregiao
+                    .mesorregiao.UF.regiao.nome);<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/013.jpg" />
+                <p class="p-4">
+                    Fazendo assim o seletor enviar para o # correspondente no arquivo HTML, exibindo em tela.<br /><br />
+
+                    Mostrando assim todas as informações da API.<br /><br />
+                </p>
+            </div>
+        </div>
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">9º PASSO - A função Show, para criar uma estética agradável para o usuário.</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Ainda</span> no arquivo JavaScript, onde desde o início adicionamos a função Show(false), vamos entendê-la.<br /><br />
+
+                    Basicamente é uma condicional, para mostrar ou não mostrar os detalhes das cidades escolhidas, esse artifício funciona da seguinte forma.<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/014.jpg" />
+                <p class="p-4">
+                    Se cria uma condicional, if/else, onde se utiliza uma condição booleana, true/false, onde caso a função seja atribuída um valor de true, ela mostrará o bloco chamado #detalhes, caso seja atribuído o valor de false, ela desaparecerá.<br /><br />
+
+                    Tudo isso pelos comandos .show (mostrar) e o .hide (esconder).<br /><br />
+
+                    Assim toda vez, que mudarmos de estado, as informações da cidade do estado escolhido anteriormente sumam, “limpando” a tela de informações “antigas”.<br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="bg-danger text-white p-2 font-weight-light mb-3">10º PASSO - Desenvolvendo o rodapé:</h4>
+            <div class="bg-light text-justify">
+                <p class="p-4 text-justify">
+                    <span class="h4 pl-5 font-weight-normal">Para</span> finalizar o site, criamos um rodapé onde de costume, utiliza-se para mostrar contatos, ou links para informações complementares.<br /><br />
+                </p>
+                <img class="m-0 p-0" style="width:100%" src="img/015.jpg" />
+                <p class="p-4">
+                    Aqui utilizamos uma classe nova, dentro do div> principal, utilizamos a classe row, criada no bootstrap para a responsividade.<br /><br />
+
+                    A funcionalidade da row é simples, divide qualquer tela, em 12 partes iguais, e assim, pode ser dividido em cada dispositivo de alguma forma.<br /><br />
+
+                    Como em nosso rodapé, criamos 2 blocos, onde um deles, no caso o bloco com mais textos e botões, utilizou 8 partes dos 12 com o comando col-sm-8, fazendo assim quando o dispositivo for maior que um small device, no caso um celular, ele ocupará 8 unidades das 12.<br /><br />
+
+                    Já o outro bloco que utiliza a imagem do logo tipo do IBGE, utiliza apenas 4 espaços, totalizando os 12. Com o comando col-sm-4.<br /><br />
+
+                    Em cada bloco utilizamos comandos HTML diferentes, no primeiro bloco, utilizamos um botão para acessar esse tutorial.<br /><br />
+
+                    button type="button" class="btn btn-warning mb-4">a href="tutorial.html">Acessar/a>/button><br /><br />
+
+                    O comando button> onde escolhemos o tipo dele ser um botão, e a classe do bootstrap que utilizamos é a de botão através do “btn” e adicionei uma cor amarela com o comando btn-warning.<br /><br />
+
+                    E o botão contém o conteúdo de um link através do comando a>, onde colocamos o “href” onde ele se refere ao endereço, em nosso caso, o tutorial.html.<br /><br />
+
+                    Já no segundo bloco, utilizamos um link contendo uma imagem, do logo do IBGE, fazendo com que o link se torne a imagem, uma forma diferente visualmente de se acessar um link.<br /><br />
+
+                    E assim finalizamos esse site, com aplicações de uma API externa. Onde utilizamos quase todas as ferramentas do front-end, deixando de lado apenas o CSS, para aproveitarmos ao máximo as classes pré-montadas do bootstrap, sem necessidade de criar um arquivo adicional de .css.<br /><br />
+                </p>
+                <button style="width:100%" type="button" class="btn btn-warning mb-4"><a href="/html/localizadorbr.html">Voltar</a></button>
+            </div>
+        </div>
+
+        <div class="container-sm text-center bg-danger p-3 mb-3">
+            <h4 class="text-white">Para acessar mais conteúdos sobre o curso de ciência da computação em geral</h4>
+            <button type="button" class="btn btn-light mb-4"><a href="https://www.mynerdlifebr.com.br/cc">Acessar</a></button>
+        </div>
+        <div class="container-sm text-center bg-danger mb-3 p-3">
+            <h4 class="text-white">Caso queira baixar os arquivos originais, abaixo está o link para meu github</h4>
+            <button type="button" class="btn btn-light mb-4"><a href="https://github.com/marcusrolimcc/localizadorbr">Acessar</a></button>
+        </div>
+</body>
+</html>
+
