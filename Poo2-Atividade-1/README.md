@@ -13,4 +13,4 @@ Montar um exemplo inédito onde haja necessidade de:
 
 Entrega: até 20h do dia 03/09/2021
 
-![alt text](https://github.com/marcusrolimcc/Uniderp-AtividadePOO2/blob/master/src/imagem/Poo2-T1.png)
+![alt text](https://github.com/marcusrolimcc/FaculdadeUniderp/blob/master/Poo2-Atividade-1/src/imagem/Poo2-T1.png)
